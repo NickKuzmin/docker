@@ -7,7 +7,7 @@
 > 5. Set the "experimental": true
 > 6. Restart Docker
 
-- Created docker network:
+- Create docker network:
 > Error response from daemon: could not find plugin bridge in v1 plugin registry: plugin not found
 
 docker network create --driver nat network-name
