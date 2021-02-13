@@ -6,6 +6,7 @@
 > docker create -ti <image-name> --name <container-name>
 > docker run -it --name <container-name> -d eon01/infinite
 > docker network ls [OPTIONS]
+> docker network rm <network-name>
 > docker search <image-name>
 > docker network create --driver nat <network-name>
 
