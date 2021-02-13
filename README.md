@@ -7,6 +7,7 @@
 > docker run -it --name <container-name> -d eon01/infinite
 > docker network ls [OPTIONS]
 > docker search <image-name>
+> docker network create --driver nat <network-name>
 
 # Docker help:
 - No matching manifest for windows/amd64 in the manifest list entries:
