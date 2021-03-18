@@ -9,6 +9,7 @@
 > docker network rm <network-name>
 > docker search <image-name>
 > docker network create --driver nat <network-name>
+> docker logs service 2>&1 | grep -C 5 "FATAL"
 
 # Docker help:
 - No matching manifest for windows/amd64 in the manifest list entries:
