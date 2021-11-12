@@ -12,7 +12,7 @@
 - docker logs service 2>&1 | grep -C 5 "FATAL"
 
 docker run -d -p 5000:5000 training/webapp
-Порты: <externalPort>:<internalContainerPort>  
+- Порты: ```<externalPort>:<internalContainerPort>``` 
 
 # Docker help:
 - No matching manifest for windows/amd64 in the manifest list entries:
