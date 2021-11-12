@@ -1,7 +1,7 @@
 # Docker commands:
 - docker ps
 - docker rm
-- docker rmi <image-id>
+- docker rmi ```<image-id>```
 - docker pull <image-name>
 - docker create -ti <image-name> --name <container-name>
 - docker run -it --name <container-name> -d eon01/infinite
