@@ -11,6 +11,9 @@
 - docker network create --driver nat <network-name>
 - docker logs service 2>&1 | grep -C 5 "FATAL"
 
+docker run -d -p 5000:5000 training/webapp
+Порты: <externalPort>:<internalContainerPort>  
+
 # Docker help:
 - No matching manifest for windows/amd64 in the manifest list entries:
 > 1. Right click Docker icon in the Windows System Tray
