@@ -11,6 +11,9 @@
 - docker network create --driver nat <network-name>
 - docker logs service 2>&1 | grep -C 5 "FATAL"
 
+*Windows PowerShell:*
+- docker rm $(docker ps -aq)
+
 docker run -d -p 5000:5000 training/webapp
 - Порты: ```<externalPort>:<internalContainerPort>``` 
 
