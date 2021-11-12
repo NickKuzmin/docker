@@ -1,15 +1,15 @@
 # Docker commands:
-> docker ps
-> docker rm
-> docker rmi
-> docker pull <image-name>
-> docker create -ti <image-name> --name <container-name>
-> docker run -it --name <container-name> -d eon01/infinite
-> docker network ls [OPTIONS]
-> docker network rm <network-name>
-> docker search <image-name>
-> docker network create --driver nat <network-name>
-> docker logs service 2>&1 | grep -C 5 "FATAL"
+- docker ps
+- docker rm
+- docker rmi
+- docker pull <image-name>
+- docker create -ti <image-name> --name <container-name>
+- docker run -it --name <container-name> -d eon01/infinite
+- docker network ls [OPTIONS]
+- docker network rm <network-name>
+- docker search <image-name>
+- docker network create --driver nat <network-name>
+- docker logs service 2>&1 | grep -C 5 "FATAL"
 
 # Docker help:
 - No matching manifest for windows/amd64 in the manifest list entries:
