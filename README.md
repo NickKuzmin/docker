@@ -1,18 +1,18 @@
 # Docker commands:
-- docker ps
-- docker rm
-- docker rmi ```<image-id>```
-- docker pull <image-name>
-- docker create -ti <image-name> --name <container-name>
-- docker run -it --name <container-name> -d eon01/infinite
-- docker network ls [OPTIONS]
-- docker network rm <network-name>
-- docker search <image-name>
-- docker network create --driver nat <network-name>
-- docker logs service 2>&1 | grep -C 5 "FATAL"
+- `docker ps`
+- `docker rm`
+- `docker rmi <image-id>`
+- `docker pull <image-name>`
+- `docker create -ti <image-name> --name <container-name>`
+- `docker run -it --name <container-name> -d eon01/infinite`
+- `docker network ls [OPTIONS]`
+- `docker network rm <network-name>`
+- `docker search <image-name>`
+- `docker network create --driver nat <network-name>`
+- `docker logs service 2>&1 | grep -C 5 "FATAL"`
 
 *Windows PowerShell:*
-- docker rm $(docker ps -aq)
+- `docker rm $(docker ps -aq)`
 
 docker run -d -p 5000:5000 training/webapp
 - Порты: ```<externalPort>:<internalContainerPort>``` 
