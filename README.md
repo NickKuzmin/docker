@@ -2,6 +2,7 @@
 - `docker version`
 - `docker ps`
 - `docker rm`
+- `docker rm $(docker ps -a -a)`
 - `docker rmi <image-id>`
 - `docker pull <image-name>`
 - `docker create -ti <image-name> --name <container-name>`
