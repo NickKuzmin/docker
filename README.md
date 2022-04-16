@@ -11,6 +11,8 @@
 - `docker search <image-name>`
 - `docker network create --driver nat <network-name>`
 - `docker logs service 2>&1 | grep -C 5 "FATAL"`
+- `docker container run <image name>`
+- - `docker container run -p 80:80 microsoft/iis:lastest`
 
 *Windows PowerShell:*
 - `docker rm $(docker ps -aq)`
