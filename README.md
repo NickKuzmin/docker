@@ -39,6 +39,25 @@ CMD php /script.php
 docker build . --tag php-cli-script
 ```
 
+```
+FROM ubuntu:18.04
+COPY . /app
+RUN make /app
+CMD python /app/app.py
+```
+
+```
+FROM ubuntu:18.04
+LABEL maintainer="somebody@somewhere.com"
+ENV ADMIN="somebody"
+RUN ["exec-file", "first", "second"]
+COPY . ./bin
+
+WORKDIR /app
+COPY . .
+ENTRYPOINT ["php", "./app/script.php", "data"]
+```
+
 - `FROM` — использовать образ с предустановленным php:7.2-cli (имя:тег)
 - `COPY` — копировать файл script.php из основной системы внутрь контейнера
 - `RUN` — выполнить shell-команду в терминале контейнера (сделать скрипт исполняемым)
@@ -89,6 +108,7 @@ Error response from daemon: could not find plugin bridge in v1 plugin registry: 
 - https://habr.com/ru/company/ruvds/blog/439978/
 ------------------------------------------------
 - https://tokmakov.msk.ru/blog/tags/303
+- https://habr.com/ru/company/ruvds/blog/439980/
 ------------------------------------------------
 # Вопросы:
   
