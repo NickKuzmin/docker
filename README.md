@@ -121,3 +121,4 @@ Error response from daemon: could not find plugin bridge in v1 plugin registry: 
 3. run —detach
 4. Возможно ли прописать volumes в Docker-файле
 5. Где хранятся логи контейнера. Как работает docker logs
+6. ADD vs COPY
