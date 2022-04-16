@@ -14,12 +14,24 @@
 - `docker container run <image name>`
 - `docker container run -p 80:80 microsoft/iis:lastest`
 - `docker attach <container name>`
+- `docker search <image name>`
+- `docker pull <image name>`
+- `docker images`
+- `docker container start <container name>`
+- `docker ps -a`
+- `docker container attach <container name>`
+- `docker container exec <container name> ls`
+- `docker container stop <container name>`
+- `docker container rm <container name>`
 ------------------------------------------------
 **Docker file:**
 
 ------------------------------------------------
 **Определения:**
+- `Docker` — это система управления процессами приложения в контейнерах. Все процессы выполняются в изолированном пространстве, но в то же время на одном ядре, что позволяет экономить ресурсы основной системы. Docker не реализует собственную систему контейнеров, он использует LXC и выступает в качестве оболочки.
 - `Docker volume` — это просто папка хоста, примонтированная к файловой системе контейнера. Так как технически она больше не принадлежит контейнеру, то последний можно смело удалять, пересоздавать заново, снова прикручивать к нему хостовые папки, и ничего с данными внутри не случится.
+------------------------------------------------
+- Комбинация опций `-i` и `-t` обеспечивает интерактивный доступ к командному процессору контейнера:
 ------------------------------------------------
 *Windows PowerShell:*
 - `docker rm $(docker ps -aq)`
