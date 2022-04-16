@@ -44,6 +44,8 @@ Error response from daemon: could not find plugin bridge in v1 plugin registry: 
 # Docker engine:
 - https://habr.com/ru/company/ruvds/blog/439978/
 ------------------------------------------------
+- https://tokmakov.msk.ru/blog/tags/303
+------------------------------------------------
 # Вопросы:
   
 1. Tag
