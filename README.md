@@ -12,8 +12,15 @@
 - `docker network create --driver nat <network-name>`
 - `docker logs service 2>&1 | grep -C 5 "FATAL"`
 - `docker container run <image name>`
-- - `docker container run -p 80:80 microsoft/iis:lastest`
+- `docker container run -p 80:80 microsoft/iis:lastest`
+- `docker attach <container name>`
+------------------------------------------------
+**Docker file:**
 
+------------------------------------------------
+**Определения:**
+- `Docker volume` — это просто папка хоста, примонтированная к файловой системе контейнера. Так как технически она больше не принадлежит контейнеру, то последний можно смело удалять, пересоздавать заново, снова прикручивать к нему хостовые папки, и ничего с данными внутри не случится.
+------------------------------------------------
 *Windows PowerShell:*
 - `docker rm $(docker ps -aq)`
 
@@ -36,7 +43,7 @@ Error response from daemon: could not find plugin bridge in v1 plugin registry: 
 
 # Docker engine:
 - https://habr.com/ru/company/ruvds/blog/439978/
-----------------
+------------------------------------------------
 # Вопросы:
   
 1. Tag
