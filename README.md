@@ -2,8 +2,9 @@
 - `docker version`
 - `docker ps`
 - `docker rm`
-- `docker rm $(docker ps -a -a)`
+- `docker rm $(docker ps -a -q)`
 - `docker rmi <image-id>`
+- `docker rmi $(docker images -a -q)`
 - `docker pull <image-name>`
 - `docker create -ti <image-name> --name <container-name>`
 - `docker run -it --name <container-name> -d eon01/infinite`
