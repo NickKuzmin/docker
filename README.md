@@ -1,4 +1,5 @@
 # Docker commands:
+- `docker version`
 - `docker ps`
 - `docker rm`
 - `docker rmi <image-id>`
