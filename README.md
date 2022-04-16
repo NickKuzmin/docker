@@ -30,6 +30,7 @@
 - `docker run -v /path/to/outer-dir:/path/to/inner-dir image-name`
 - `docker inspect <container name>`
 - `docker exec -it nginx /bin/bash`
+- `docker run --name redis -v /root/docker-practice/1/redis/:/data/ -d redis`
 ------------------------------------------------
 **Docker file:**
 
