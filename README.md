@@ -28,6 +28,7 @@
 - `docker container rename <container name> <new container name>`
 - `docker commit -m "Added web-server Apache2" -a "Evgeniy Tokmakov" 37def446ae84 tokmakov/apache2_ubuntu`
 - `docker run -v /path/to/outer-dir:/path/to/inner-dir image-name`
+- `docker inspect <container name>`
 ------------------------------------------------
 **Docker file:**
 
