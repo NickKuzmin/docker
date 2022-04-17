@@ -104,6 +104,18 @@ RUN apt-get update && apt-get install y \
   nginx \
 && rm -rf /var/lib/apt/lists/*
 ```
+
+2) `docker.ignore`
+3) Часто изменяемые слои нужно располагать в конце в Dockerfile (`COPY . /opt`)
+4) Выставление конкретных версий базового образа и зависимостей:
+```
+FROM alpine:3.11.5
+
+ENV NGINX_VERSION 1.16.1-r6
+
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.11/main nginx=${NGINX_VERSION} \
+  && mkdir -p /run/nginx
+```
 ------------------------------------------------
 *Windows PowerShell:*
 - `docker rm $(docker ps -aq)`
