@@ -96,6 +96,15 @@ ENTRYPOINT ["php", "./app/script.php", "data"]
 2) Host
 3) None
 ------------------------------------------------
+**Docker's best practices:**
+
+1) Очистка кэша и уменьшение слоев за счет общего вызова:
+```
+RUN apt-get update && apt-get install y \
+  nginx \
+&& rm -rf /var/lib/apt/lists/*
+```
+------------------------------------------------
 *Windows PowerShell:*
 - `docker rm $(docker ps -aq)`
 
