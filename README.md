@@ -31,6 +31,7 @@
 - `docker inspect <container name>`
 - `docker exec -it nginx /bin/bash`
 - `docker run --name redis -v /root/docker-practice/1/redis/:/data/ -d redis`
+- `docker-compose up -d`
 ------------------------------------------------
 ```
 docker run --volume <HOST DIRECTORY>:<CONTAINER DIRECTORY> -p <HOST PORT>:<CONTAINER PORT> ubuntu /bin/bash
