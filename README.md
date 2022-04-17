@@ -116,6 +116,11 @@ ENV NGINX_VERSION 1.16.1-r6
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.11/main nginx=${NGINX_VERSION} \
   && mkdir -p /run/nginx
 ```
+5) Запуск приложения через `ENTRYPOINT`, а флаги к приложению - через `CMD`:
+```
+ENTRYPOINT ["/bin/project"]
+CMD ["--help"]
+```
 ------------------------------------------------
 *Windows PowerShell:*
 - `docker rm $(docker ps -aq)`
