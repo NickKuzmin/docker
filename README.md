@@ -1,3 +1,24 @@
+------------------------------------------------
+**Issues:**
+
+1) `Failed to deploy distro docker-desktop to C:\Users\Chakrit Rakhuang\AppData\Local\Docker\wsl\distro`
+
+https://github.com/docker/for-win/issues/8204
+
+```
+Uninstall Docker and WSL 2 kernel.
+Go to the Control Panel -> Programs -> Turn Windows features on or off
+Uncheck the following: Containers, Hyper-V, Windows Subsystem for Linux
+Restart the system
+Install Docker without the WSL2 enabled/checked in the first screen
+Go to the Control Panel -> Programs -> Turn Windows features on or off
+Turn on/check the Windows Subsystem for Linux
+Restart the system.
+Do not install the WSL2 Kernel when reinstalling Docker.﻿﻿
+```
+
+2) 
+------------------------------------------------
 # Docker commands:
 - `docker version`
 - `docker ps`
