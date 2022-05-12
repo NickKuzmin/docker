@@ -33,6 +33,8 @@
 - `docker run --name redis -v /root/docker-practice/1/redis/:/data/ -d redis`
 - `docker-compose up -d`
 - `docker-compose down`
+- `docker-compose --version`
+- `docker --version`
 ------------------------------------------------
 ```
 docker run --volume <HOST DIRECTORY>:<CONTAINER DIRECTORY> -p <HOST PORT>:<CONTAINER PORT> ubuntu /bin/bash
