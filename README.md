@@ -53,6 +53,7 @@ Do not install the WSL2 Kernel when reinstalling Docker.﻿﻿
 - `docker exec -it nginx /bin/bash`
 - `docker run --name redis -v /root/docker-practice/1/redis/:/data/ -d redis`
 - `docker-compose up -d`
+- `docker-compose -f /path/to/other/docker-compose-file/docker-compose.yml up`
 - `docker-compose down`
 - `docker-compose --version`
 - `docker --version`
