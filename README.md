@@ -1,4 +1,33 @@
 ------------------------------------------------
+cd folder
+git pull origin main
+docker-compose -f docker-compose.deploy.effective.yml down
+docker stop $(docker ps -a -q)
+docker container prune
+docker volume rm $(docker volume ls -q)
+docker ps -a --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'
+docker logs containername
+docker ps -f health=unhealthy -f health=starting --filter "status=exited" --filter "status=dead" --filter "status=restarting"
+docker container restart containername
+docker stop containername
+docker rmi $(docker images -q)
+docker images | grep "reference"
+
+ls -l
+grep "license_service:1.0.0-" docker-compose.deploy.effective.yml
+grep "license_service:1.0.0-" docker-compose.yml
+
+**Взять из актуального docker-compose (актуальный из текущей сборки = sha7eb71ac0):**
+** Заменить хеш, где захачено = shaf58c5df1:**
+sed -i 's/sha7eb71ac0/shaf58c5df1/g' docker-compose.deploy.effective.yml
+sed -i 's/sha7eb71ac0/sha74cb8bf3/g' docker-compose.deploy.effective.yml
+docker images | grep "license"
+
+docker inspect containername
+
+git checkout -B "main" "origin/main"
+git rev-parse HEAD
+------------------------------------------------
 **Issues:**
 
 1) `Failed to deploy distro docker-desktop to C:\Users\Chakrit Rakhuang\AppData\Local\Docker\wsl\distro`
